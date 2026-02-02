@@ -25,3 +25,5 @@ css_knifespeed <значение> - Изменить множитель скор
 css_knifespeed_reload - Перезагрузить конфигурацию
 
 css_plugins reload CS2KnifeSpeed - Перезагрузить плагин
+
+ЭТОТ ПЛАГИН ФОРК ЭТОГО ПЛАГИНА https://github.com/akanora/CS2-WeaponSpeed
