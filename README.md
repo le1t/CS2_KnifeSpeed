@@ -1,34 +1,33 @@
 # CS2_KnifeSpeed
+Плагин увеличивает скорость передвижения игрока, когда в руках нож. При переключении на другое оружие скорость возвращается к обычной.
 
-## Описание плагина: CS2 KnifeSpeed - плагин для CS2, увеличивающий скорость передвижения игроков при держании ножа и автоматически возвращающий обычную скорость при переключении на другое оружие.
+# https://www.youtube.com/watch?v=p0WmurPLugo
 
-https://www.youtube.com/watch?v=p0WmurPLugo
+# Требования
+```
+CounterStrikeSharp API версии 362 или выше
+.NET 8.0 Runtime
+```
 
-### Требования
-1. CounterStrikeSharp API версии 1.0.362 или выше
-2. .NET 8.0 Runtime
+# Конфигурационные параметры
+```
+css_knifespeed_enabled <0/1>, def.=1 – Включение/выключение плагина.
+css_knifespeed_multiplier <1.0-5.0>, def.=1.3 – Множитель скорости при активном ноже.
+css_knifespeed_check_interval <0.05-1.0>, def.=0.1 – Интервал проверки активного оружия (в секундах).
+css_knifespeed_log_level <0-5>, def.=4 – Уровень логирования (0-Trace,1-Debug,2-Info,3-Warning,4-Error,5-Critical).
+```
 
-### Конфигурационные параметры:
+# Консольные команды
+```
+css_knifespeed_help – Показать справку по плагину.
+css_knifespeed_settings – Показать текущие настройки и статистику.
+css_knifespeed_test – Проверить работу плагина (для игрока: показать текущий VelocityModifier).
+css_knifespeed_reload – Перезагрузить конфигурацию и сбросить данные игроков.
+css_knifespeed_setenabled <0/1> – Установить значение css_knifespeed_enabled.
+css_knifespeed_setmultiplier <1.0-5.0> – Установить множитель скорости.
+css_knifespeed_setcheckinterval <0.05-1.0> – Установить интервал проверки (для применения требуется перезагрузка плагина или команда reload).
+css_knifespeed_setloglevel <0-5> – Установить уровень логирования.
+css_knifespeed – Псевдоним для css_knifespeed_setmultiplier (работает так же).
+```
 
-css_knifespeed_enabled (true) - Глобальное включение плагина
-
-css_knifespeed_multiplier (1.3) - Множитель скорости с ножом (1.0-5.0)
-
-css_knifespeed_check_interval (0.1) - Интервал проверки оружия в секундах (0.05-1.0)
-
-css_knifespeed_log_level (1) - Уровень логирования (0=Error, 1=Info, 2=Debug)
-
-
-### Консольные команды:
-
-css_knifespeed_help - Показать справку
-
-css_knifespeed_settings - Показать настройки
-
-css_knifespeed <значение> - Изменить множитель скорости (1.0-5.0)
-
-css_knifespeed_reload - Перезагрузить конфигурацию
-
-css_plugins reload CS2KnifeSpeed - Перезагрузить плагин
-
-ЭТОТ ПЛАГИН ФОРК ЭТОГО ПЛАГИНА https://github.com/akanora/CS2-WeaponSpeed
+# ЭТОТ ПЛАГИН ФОРК ЭТОГО ПЛАГИНА https://github.com/akanora/CS2-WeaponSpeed
